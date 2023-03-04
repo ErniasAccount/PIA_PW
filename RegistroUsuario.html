@@ -12,10 +12,30 @@
             <h2 class="tirulo">Registrarse</h2>
             <P.2>llene los datos solicitados</P.2>
             <div class="padre">
-                <input class="controls" type="text"  name="usuario" id="FirstName"  placeholder="Nombre">
-                <input class="controls" type="text"  name="contra" id="LastName"  placeholder="Apellido">
-                <input class="controls" type="text"  name="usuario" id="BirthDay"  placeholder="Fecha de Nacimiento">
-                <input class="controls" type="image"  name="contra" id="pass"  placeholder="Imagen de Perfil">
+                <input class="controls" type="text"  name="Nombre" id="FirstName"  placeholder="Nombre">
+                <input class="controls" type="text"  name="Apellido" id="LastName"  placeholder="Apellido">
+                <input class="controls" type="text"  name="BirthDay" id="BirthDay"  placeholder="BirthDayo">
+                <P.2>Seleccione una foto de perfil</P.2>
+
+                <input type="file" id="archivo" name="archivo"/>
+                
+                <img src="" id="preview" height="200">
+                <script>
+                    function mostrarImagen(event){
+                        var imagenSource = event.target.result;
+                        var previewimage = document.getElementById('preview')
+                        previewimage.src = imagenSource;
+                    }
+                    function procesarArchivo(event){
+                        var imagen = event.target.files[0]
+                        var lector = new FileReader();
+                        lector.readAsDataURL(imagen);
+                        lector.addEventListener('load', mostrarImagen)
+                    }
+                    document.getElementById('archivo')
+                    .addEventListener('change',procesarArchivo,false)
+                </script>
+
                 <input class="controls" type="text"  name="usuario" id="Username"  placeholder="Nombre de Usuario">
                 <input class="controls" type="password"  name="contra" id="pass"  placeholder="Contraseña">
 
