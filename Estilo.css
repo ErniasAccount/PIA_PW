@@ -10,7 +10,7 @@
     
     .container{
         width: 400px;
-        height: 450px;
+        height: 525px;
         margin: auto;
         background: #4e4d4d;
         margin-top: 130px;
@@ -25,16 +25,6 @@
         padding: auto;
         margin: auto;
     }
-
-    .container h5{
-        margin: 0;
-        text-align: center;
-        height: 40px;
-        margin-bottom: 30px;
-        border-bottom: 1px solid;
-        font-size: 20px;
-    
-    }
     
     .controls{
         width:100%;
@@ -45,16 +35,17 @@
         font-weight: bold;
     }
     
-    .buttons{
-    padding: auto; 
+    .buttontype1{
     width: 150px;
     height: 40px;
     background: #017bab;
     border: none;
-    color: rgb(140, 199, 224);
+    color: rgb(20, 68, 89);
     margin-bottom: 16px;
+    justify-content:  center;
+    align-items: center;
+    text-align: center;
     margin: auto;
-
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     
