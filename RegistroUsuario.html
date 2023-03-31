@@ -7,18 +7,36 @@
     <link rel="stylesheet" href="Estilo.css">
 </head>
 <body>
+
     <div class="container">
-        <form action="" class="formulario">
+        
+        <form name=form action="REGISTRO USUARIO" class="formulario">
             <h2 class="tirulo">Registrarse</h2>
             <P.2>llene los datos solicitados</P.2>
             <div class="padre">
                 <input class="controls" type="text"  name="Nombre" id="FirstName"  placeholder="Nombre">
                 <input class="controls" type="text"  name="Apellido" id="LastName"  placeholder="Apellido">
-                <input class="controls" type="text"  name="BirthDay" id="BirthDay"  placeholder="BirthDayo">
-                <P.2>Seleccione una foto de perfil</P.2>
 
+                <div class="FechaNac">
+                    <input class="controls" type="date" id="BirthDay"  placeholder="BirthDayo">
+                    <button class="controls"type="boton" id="ButtonConfirm">Validar</button>
+                    <script>
+                        let input = document.querySelector('#BirthDay');
+                        let button = document.querySelector('#ButtonConfirm');
+                        button.addEventListener('click', function() {
+                            let today = new Date();
+                            let inputDate = new Date(input.value);
+                            if (inputDate > today) {
+                                alert('Fecha inválida');
+                            }
+                        });
+                    </script>
+    
+                </div>
+            
+                <div class="Foto de perfil">
+                <P.2>Seleccione una foto de perfil</P.2>
                 <input type="file" id="archivo" name="archivo"/>
-                
                 <img src="" id="preview" height="200">
                 <script>
                     function mostrarImagen(event){
@@ -35,19 +53,21 @@
                     document.getElementById('archivo')
                     .addEventListener('change',procesarArchivo,false)
                 </script>
-
-                <input class="controls" type="text"  name="usuario" id="Username"  placeholder="Nombre de Usuario">
-                <input class="controls" type="password"  name="contra" id="pass"  placeholder="Contraseña">
-
-                <div class="Cuenta">
-                    <p>¿Ya tienes una cuenta? <a href="RegistroUsuario.html">Haz clic aquí</a></p>
-                </div> 
-                <div>
-                    <input class="buttontype1" type="button" name="BotonConfirmar" value="Confirmar" id="ButtonConfirm" onclick="Registrarse()">
-                    <input class="buttontype1" type="button" name="BotonCancelar" value="Cancelar" id="ButtonCancel" onclick="Registrarse()">
                 </div>
 
+
+               
+                <input class="controls" type="text"  name="usuario" id="Username"  placeholder="Nombre de Usuario">
+                <input class="controls" type="password"  name="contra" id="pass"  placeholder="Contraseña">
+                <input class="controls" type="password"  name="confcontra" id="confirmpass"  placeholder="Confirmar contraseña">
+
+                <div class="Cuenta">
+                    <p>¿Ya tienes una cuenta? <a href="InicioSesion.html">Haz clic aquí</a></p>
+                </div> 
+                
+                <input class="buttontype1" type="button" name="BotonConfirmar" value="Confirmar" id="ButtonConfirm" onclick="captura()">
             </div>
+    
         </form>
     </div>
 </body>
