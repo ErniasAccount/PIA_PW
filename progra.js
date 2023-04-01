@@ -34,11 +34,18 @@ function login(){
     var user="admin";
     var pass=123;
 
-    if(document.form.contra.value== pass && document.form.usuario.value==user){
-        window.location= "PaginaPrincipal.html"; }
-        else{
-        alert("porfavor introduce el usuario o contraseña correcto.");
-        }
+    if(document.form.contra.value== pass && document.form.usuario.value==user)
+    {
+        window.location= "PaginaPrincipal.html"; 
+    }
+    else
+    {
+                alert("porfavor introduce el usuario o contraseña correcto.");
+    }
    
 }
 
+function Perfil_Regresar() {
+    window.location= "PaginaPrincipal.html"; 
+
+}

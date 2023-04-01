@@ -15,10 +15,12 @@
     
     
     .container{
+     
         border-radius: 12px;
-        width: 400px;
+        margin: 10%;
+        width: auto;
         height: auto;
-        margin: auto;
+       
         background: #525252;
         margin-top: 130px;
         box-shadow: 0px 10px 500px #000;
@@ -133,7 +135,7 @@
         background-color: #86bae7;
         align-items: center;
         justify-content: center;
-        font-size: 48px;
+        font-size: 20px;
         
     }
 
@@ -239,4 +241,98 @@
         max-height:20px; 
         max-width:20px; 
         margin-right:5px; 
+    }
+
+    /*SECCION DE PERFIL---------------------------------------------------------*/
+    .Profilecontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .profile {
+        width: 600px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    }
+
+    .profile-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .profile-header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    }
+
+    .profile-header h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    .profile-header h2 {
+        font-size: 24px; 
+        margin-top:5px; 
+        margin-bottom:10px; 
+        color:#00a1ff; 
+    }
+    
+    .profile-header p{
+        font-size:18px; 
+        margin-top:-5px; 
+        margin-bottom:-5px; 
+        color:#666; 
+    }
+    
+    .profile-header span{
+        font-size:14px; 
+        color:#999; 
+    }
+    
+    .profile-header button{
+        background-color:#00a1ff; 
+        color:white; 
+        border:none; 
+        padding:10px 20px; 
+        border-radius:5px; 
+        font-size:16px; 
+        cursor:pointer; 
+    }
+    
+    .profile-header button:hover{
+        background-color:#007acc;  
+    }
+
+    .profile-body{
+        display:flex; 
+        flex-wrap:wrap; 
+    }
+    
+    .profile-body div{
+        flex-basis:calc(33.33% - 20px);  
+        margin-right:20px;  
+        margin-bottom:20px;  
+    }
+    
+    .profile-body div:last-child{
+        margin-right:0;  
+    }
+    
+    .profile-body h3{
+        font-size:24px;  
+        margin-top:-5px;  
+    }
+    
+    .profile-body p{
+        font-size:18px;  
+        margin-top:-5px;  
     }
