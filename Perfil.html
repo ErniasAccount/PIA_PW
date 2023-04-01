@@ -13,14 +13,31 @@
         <div class="profile">
             
             <div class="profile-header">
-                <img src="https://via.placeholder.com/150" alt="Avatar">
+                <input type="file" id="archivo" name="archivo"/>
+                <script>
+                    function mostrarImagen(event){
+                        var imagenSource = event.target.result;
+                        var previewimage = document.getElementById('preview')
+                        previewimage.src = imagenSource;
+                    }
+                    function procesarArchivo(event){
+                        var imagen = event.target.files[0]
+                        var lector = new FileReader();
+                        lector.readAsDataURL(imagen);
+                        lector.addEventListener('load', mostrarImagen)
+                    }
+                    document.getElementById('archivo')
+                    .addEventListener('change',procesarArchivo,false)
+                </script>
+
+                <img id="preview" src="https://via.placeholder.com/150" alt="Avatar">
                 <div>
                     <h1>Nombre de usuario</h1>
                     <h2>@nombredeusuario</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum.</p>
                     <br><span>Ubicación</span><br>
                     <button>Editar perfil</button>
-                    <button onclick="Perfil_Regresar()">Confirmar</button>
+                    <a href="PaginaPrincipal.html">Salir</a>
 
                 </div>
 
