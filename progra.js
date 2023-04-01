@@ -31,8 +31,8 @@ function localStorageUsuarios(plist){
 
 
 function login(){
-    var user="user";
-    var pass=1234;
+    var user="admin";
+    var pass=123;
 
     if(document.form.contra.value== pass && document.form.usuario.value==user){
         window.location= "pagina.html"; }
@@ -41,3 +41,4 @@ function login(){
         }
    
 }
+

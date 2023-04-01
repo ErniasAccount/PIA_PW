@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Estilo.css">
+
 </head>
 <body>
-
     <div class="container">
-        
-        <form name=form action="REGISTRO USUARIO" class="formulario">
-            <h2 class="tirulo">Registrarse</h2>
-            <P.2>llene los datos solicitados</P.2>
-            <div class="padre">
-                <input class="controls" type="text"  name="Nombre" id="FirstName"  placeholder="Nombre">
-                <input class="controls" type="text"  name="Apellido" id="LastName"  placeholder="Apellido">
 
-                <div class="FechaNac">
-                    <input class="controls" type="date" id="BirthDay"  placeholder="BirthDayo">
-                    <button class="controls"type="boton" id="ButtonConfirm">Validar</button>
+        <div class="padre">
+            <form name="form" action="REGISTRO_USUARIO", class="FormularioRU">
+                    <h2>Registrarse</h2>
+                    <P.2>Llene los campos solicitados</P.2><br>
+
+
+                    <br><P.2>Datos personales:</P.2>
+
+                    <input class="controls" type="text"  name="Nombre" id="FirstName"  placeholder="Nombre">
+                    <input class="controls" type="text"  name="Apellido" id="LastName"  placeholder="Apellido">
+
+                    
+                    <label for="dateInput">Fecha de nacimiento:</label><bl>
+                    <input type="date" id="dateInput">
                     <script>
-                        let input = document.querySelector('#BirthDay');
-                        let button = document.querySelector('#ButtonConfirm');
-                        button.addEventListener('click', function() {
+                        let input = document.querySelector('#dateInput');
+                        input.addEventListener('change', function() {
                             let today = new Date();
                             let inputDate = new Date(input.value);
-                            if (inputDate > today) {
-                                alert('Fecha inválida');
+                            if (inputDate >= today) {
+                                alert("Fecha inválida");
                             }
                         });
                     </script>
-    
-                </div>
-            
-                <div class="Foto de perfil">
-                <P.2>Seleccione una foto de perfil</P.2>
+                
+                <br><br><P.2>Seleccione una foto de perfil:</P.2>
                 <input type="file" id="archivo" name="archivo"/>
-                <img src="" id="preview" height="200">
+                <img src="" id="preview" height="190">
                 <script>
                     function mostrarImagen(event){
                         var imagenSource = event.target.result;
@@ -53,22 +54,23 @@
                     document.getElementById('archivo')
                     .addEventListener('change',procesarArchivo,false)
                 </script>
-                </div>
-
-
-               
+                <br>
+                <br><P.2>Datos del usuario</P.2>
                 <input class="controls" type="text"  name="usuario" id="Username"  placeholder="Nombre de Usuario">
                 <input class="controls" type="password"  name="contra" id="pass"  placeholder="Contraseña">
                 <input class="controls" type="password"  name="confcontra" id="confirmpass"  placeholder="Confirmar contraseña">
-
-                <div class="Cuenta">
-                    <p>¿Ya tienes una cuenta? <a href="InicioSesion.html">Haz clic aquí</a></p>
-                </div> 
                 
-                <input class="buttontype1" type="button" name="BotonConfirmar" value="Confirmar" id="ButtonConfirm" onclick="captura()">
-            </div>
-    
-        </form>
+                
+                <p>¿Ya tienes una cuenta? <a href="InicioSesion.html">Haz clic aquí</a></p>
+                <div style="text-align: center;" >
+                    <input class="buttontype1" type="button" name="boton" value="Confirmar" id="Registro_Boton_Confirmar" onclick="login()"> <!-- Añade a la base de datos -->
+                    <input class="buttontype1" type="button" name="boton" value="Cancelar" id="Registro_Boton_Cancelar" onclick="login()"> <!-- Regresa a la pagina de login -->
+                </div>
+
+            </form>
+
+        </div>
+
     </div>
 </body>
 </html>
