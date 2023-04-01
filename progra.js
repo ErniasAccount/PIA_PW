@@ -49,3 +49,11 @@ function Perfil_Regresar() {
     window.location= "PaginaPrincipal.html"; 
 
 }
+
+function Post_cancelar() {
+
+}
+
+function Post_publicar() {
+    
+}

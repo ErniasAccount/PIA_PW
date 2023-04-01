@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Publicar</title>
+    <link rel="stylesheet" href="Estilo.css">
+
+	<style type="text/css">
+        
+		
+      
+	</style>
+</head>
+<body>
+	<form>
+        <div class="formatoPost">
+
+            <label for="titulo">Título:</label>
+		<input type="text" id="Post_titulo" name="titulo" required>
+
+		<label for="descripcion">Descripción:</label>
+		<textarea id="Post_descripcion" name="descripcion" required></textarea>
+
+		<label for="foto">Selecciona una fotografía:</label>
+        <input type="file" id="archivo" name="archivo"/>
+        <img src="" id="preview" width="200" height="200"><br>
+        <script>
+            function mostrarImagen(event){
+                var imagenSource = event.target.result;
+                var previewimage = document.getElementById('preview')
+                previewimage.src = imagenSource;
+            }
+            function procesarArchivo(event){
+                var imagen = event.target.files[0]
+                var lector = new FileReader();
+                lector.readAsDataURL(imagen);
+                lector.addEventListener('load', mostrarImagen)
+            }
+            document.getElementById('archivo')
+            .addEventListener('change',procesarArchivo,false)
+        </script>
+
+
+        <button class="Post_Button" id="Post_Button_Cancel" type="submit" onclick="Post_publicar()" >Publicar</button>
+        <button class="Post_Button" id="Post_Button_Cancel" type="submit" onclick="Post_cancelar()" >Cancelar</button>
+
+        
+
+        </div>
+		
+	</form>
+</body>
+</html>
