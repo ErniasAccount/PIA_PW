@@ -134,12 +134,13 @@
         align-items: center;
         justify-content: center;
         font-size: 48px;
+        
     }
 
     .dashboard {
         width: 70%;
         height: auto;
-padding: 20px;
+        padding: 20px;
         height: 100%;
         background-color: #e6e6e6;
         display: flex;
@@ -149,7 +150,13 @@ padding: 20px;
     }
 
     /*SECCION DE PUBLICACIONES -------------------------------------------------*/
+    .PostContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
 
+    }
     .post {
         width: auto;
         background-color: #f2f2f2;
