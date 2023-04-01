@@ -31,7 +31,7 @@ function localStorageUsuarios(plist){
 
 
 function login(){
-    var user="Santiago";
+    var user="user";
     var pass=1234;
 
     if(document.form.contra.value== pass && document.form.usuario.value==user){
