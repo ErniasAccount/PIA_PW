@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Encabezado</title>
+    <link rel="stylesheet" href="Estilo.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#searchBtn").click(function(){
+				var searchQuery = $("#searchInput").val();
+				window.location.href = "https://www.bing.com/search?q=" + searchQuery;
+			});
+		});
+	</script>
+		
+<div class="EncabezadoPrincipal">
+    <h1 class="icono">PioPio.com</h1>
+    <a class="Separador" href="InicioSesion.html">Cerrar sesion</a>
+    <a class="Separador" href="PaginaPrincipal.html">PaginaPrincipal</a>
+    <a class="Separador" href="InicioSesion.html">Mi perfil</a>
+
+    <input type="text" id="searchInput">
+	<button class="sepa" id="searchBtn">Buscar</button>
+
+</div>
+</head>
+<body>
+	<div class="TodoElMedio">
+        <div class="columna">
+            <img src="https://th.bing.com/th/id/R.0aa97fd1bc308c24a414b027d89ef047?rik=O0CcWbUsqTzKTA&riu=http%3a%2f%2fwww.eje21.com.co%2fsite%2fwp-content%2fuploads%2f2018%2f09%2fDon-Ram%c3%b3n.-Foto-Televisa..png&ehk=YTuX%2fzvhBIqbmN8Xz%2bT9SFa%2f7Z4XbnoajMf%2bsPrvCKw%3d&risl=&pid=ImgRaw&r=0" height="190" alt="No se cargó su imagen de perfil">
+            <h1>texto</h1>
+            <h1>texto</h1>
+            <h1>texto</h1>
+        </div>
+    
+        <div class="publicacion">
+            Publicaciones
+        </div>
+    
+    </div>
+
+<footer >
+    <h1 class="miFooter">Pie de pagina</h1>
+
+</footer>
+</body>
+
+
+
+</html>
+
