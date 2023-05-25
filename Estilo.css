@@ -85,15 +85,25 @@
     /*SECCION DE LA PAGINA PRINCIPAL*/
     .icono {
         background-color: rgb(55, 55, 55);
+        font-size: 24px;
         width: auto;
         height: auto;
         color: rgb(255, 0, 0);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-    }
-    .EncabezadoPrincipal {
-        background-color: #ffffff;
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+      }
+      
+      .icono:hover {
+        background-color: #333;
+      }    .EncabezadoPrincipal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #333;
+        color: white;
 
     }
     .funcsuper {
@@ -103,13 +113,8 @@
 
     }
 
-    
-    .Separador {
-        border-radius: 10px;
-        background-color: rgb(196, 224, 237);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: larger;
-    }
+
+
     .miFooter {
         background-color: aliceblue;
     }
@@ -369,3 +374,20 @@
         border: none;
         cursor: pointer;
     }
+
+    .EncabezadoPrincipal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+      }
+      .Separador {
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+      }
+      .Separador:hover {
+        text-decoration: underline;
+      }

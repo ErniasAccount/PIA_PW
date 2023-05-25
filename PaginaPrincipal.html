@@ -1,86 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>Encabezado</title>
+
+    <title>Encabezado</title>
     <link rel="stylesheet" href="Estilo.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("#searchBtn").click(function(){
-				var searchQuery = $("#searchInput").val();
-				window.location.href = "https://www.bing.com/search?q=" + searchQuery;
-			});
-		});
-	</script>
-		
-<div class="EncabezadoPrincipal">
-    <h1 class="icono">PioPio.com</h1>
-    <a class="Separador" href="InicioSesion.html">Cerrar sesion</a>
-    <a class="Separador" href="PaginaPrincipal.html">PaginaPrincipal</a>
-    <a class="Separador" href="Perfil.html">Mi perfil</a>
-    <a class="Separador" href="Post.html">Hacer un Post</a>
-
-    <input type="text" id="searchInput">
-	<button class="sepa" id="searchBtn">Buscar</button>
-
-</div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#searchBtn").click(function(){
+    var searchQuery = $("#searchInput").val();
+    window.location.href = "https://www.bing.com/search?q=" + searchQuery;
+    });
+    });
+    </script>
 </head>
 <body>
+    <div class="EncabezadoPrincipal">
+        <a href="PaginaPrincipal.html"><h1 class="icono">PioPio.com</h1></a>
+        <div>
+        <a class="Separador" href="InicioSesion.html">Cerrar sesion</a>
+        <a class="Separador" href="PaginaPrincipal.html">PaginaPrincipal</a>
+        <a class="Separador" href="Perfil.html">Mi perfil</a>
+        <a class="Separador" href="Post.html">Hacer un Post</a>
+       
+        <input type="text" id="searchInput">
+        <button class="sepa" id="searchBtn">Buscar</button>
+        </div>
+       
+       </div>       
     <div class="completo">
-        <div class="sidebar">
-            <br>
-            <img src="https://th.bing.com/th/id/R.0aa97fd1bc308c24a414b027d89ef047?rik=O0CcWbUsqTzKTA&riu=http%3a%2f%2fwww.eje21.com.co%2fsite%2fwp-content%2fuploads%2f2018%2f09%2fDon-Ram%c3%b3n.-Foto-Televisa..png&ehk=YTuX%2fzvhBIqbmN8Xz%2bT9SFa%2f7Z4XbnoajMf%2bsPrvCKw%3d&risl=&pid=ImgRaw&r=0" height=100px alt="No se cargó su imagen de perfil">
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum.
-        </div>
-        
-        <div class="dashboard">
-            <div>
-            </div>
-            <div class="PostContainer">
-                <div class="post">
-                    <div class="post-header">
-                        <img src="https://th.bing.com/th/id/R.0aa97fd1bc308c24a414b027d89ef047?rik=O0CcWbUsqTzKTA&riu=http%3a%2f%2fwww.eje21.com.co%2fsite%2fwp-content%2fuploads%2f2018%2f09%2fDon-Ram%c3%b3n.-Foto-Televisa..png&ehk=YTuX%2fzvhBIqbmN8Xz%2bT9SFa%2f7Z4XbnoajMf%2bsPrvCKw%3d&risl=&pid=ImgRaw&r=0" alt="Avatar">
-                        <h3>Nombre de usuario</h3>
-                    </div>
-                    
-                    <div class="post-content">
-                        soy don monchito
-                    </div>
-                    
-                    <div class="post-footer">
-                        <span>Publicado hace X minutos</span>
-                        <a href="#"><i class="fa fa-thumbs-up"></i> Me gusta</a>
-                        <a href="#"><i class="fa fa-comment"></i> Comentar</a>
-                        <a href="#"><i class="fa fa-share"></i> Compartir</a>
-                        <span>123 Me gusta</span>
-                        <a href="#"><img src="https://via.placeholder.com/20" alt="Avatar"> Nombre de usuario</a>
-                        <a href="#"><img src="https://via.placeholder.com/20" alt="Avatar"> Nombre de usuario</a>
-                        <a href="#"><img src="https://via.placeholder.com/20" alt="Avatar"> Nombre de usuario</a>
-                        <span>y otras X personas más les gusta esto.</span>
-                    </div>
-                    
-                </div>
-        
-            </div>
-        </div>
-    
+    <div class="sidebar">
+    <br>
+    <img src="https://th.bing.com/th/id/R.0aa97fd1bc308c24a414b027d89ef047?rik=O0CcWbUsqTzKTA&riu=http%3a%2f%2fwww.eje21.com.co%2fsite%2fwp-content%2fuploads%2f2018%2f09%2fDon-Ram%c3%b3n.-Foto-Televisa..png&ehk=YTuX%2fzvhBIqbmN8Xz%2bT9SFa%2f7Z4XbnoajMf%2bsPrvCKw%3d&risl=&pid=ImgRaw&r=0" height=100px alt="No se cargó su imagen de perfil">
+    <br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum.
     </div>
 
-<footer >
-    <div class="miFooter">    
+    <div class="dashboard">
+    <div>
+    </div>
+    <div class="PostContainer">
+    <div class="post">
+    <div class="post-header">
+    <img src="https://th.bing.com/th/id/R.0aa97fd1bc308c24a414b027d89ef047?rik=O0CcWbUsqTzKTA&riu=http%3a%2f%2fwww.eje21.com.co%2fsite%2fwp-content%2fuploads%2f2018%2f09%2fDon-Ram%c3%b3n.-Foto-Televisa..png&ehk=YTuX%2fzvhBIqbmN8Xz%2bT9SFa%2f7Z4XbnoajMf%2bsPrvCKw%3d&risl=&pid=ImgRaw&r=0" alt="Avatar">
+    <h3>Nombre de usuario</h3>
+    </div>
+
+    <div class="post-content">
+    soy don monchito
+    </div>
+
+    <div class="post-footer">
+        <span>Publicado hace X minutos</span>
+        <a href="#"><i class="fa fa-thumbs-up"></i> Me gusta</a>
+        <a href="#"><i class="fa fa-comment"></i> Comentar</a>
+        <a href="#"><i class="fa fa-share"></i> Compartir</a>
+        <span>123 Me gusta</span>
+        <a href="#"><img src="https://via.placeholder.com/20" alt="Avatar"> Nombre de usuario</a>
+        <a href="#"><img src="https://via.placeholder.com/20" alt="Avatar"> Nombre de usuario</a>
+        <a href="#"><img src="https://via.placeholder.com/20" alt="Avatar"> Nombre de usuario</a>
+        <span>y otras X personas más les gusta esto.</span>
+        </div>
+    
+        </div>
+    
+        </div>
+        </div>
+    
+        </div>
+    
+    <footer >
+        <div class="miFooter"> 
         <h1>Autores</h1>
         <a>Felipe Isidoro Gómez Rodríguez - Front</a><br>
         <a>Santiago Alberto Cordero Pacheco - Back - </a>
+    
+        </div>
+    
+    </footer>
+   </body>
+   
 
-    </div>
-
-</footer>
-</body>
-
-
-
-</html>
+   
+   </html>
 
