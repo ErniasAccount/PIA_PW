@@ -84,11 +84,11 @@
 
     /*SECCION DE LA PAGINA PRINCIPAL*/
     .icono {
-        background-color: rgb(55, 55, 55);
+        background-color: rgb(118, 118, 118);
         font-size: 24px;
         width: auto;
         height: auto;
-        color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         display: inline-block;
         padding: 10px;
@@ -96,6 +96,7 @@
       }
       
       .icono:hover {
+        transition: 1s;
         background-color: #333;
       }    .EncabezadoPrincipal {
         display: flex;
@@ -106,6 +107,7 @@
         color: white;
 
     }
+    
     .funcsuper {
         background-color: rgb(255, 255, 255);
         width: auto;
@@ -158,6 +160,7 @@
 
     /*SECCION DE PUBLICACIONES -------------------------------------------------*/
     .PostContainer {
+        width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -215,6 +218,7 @@
     }
     
     .post-footer a {
+        margin: 10px;
         color: gray;
         text-decoration:none; 
     }
@@ -365,15 +369,21 @@
     .inputPost[type="file"] {
         margin-bottom: 10px;
     }
-    .Post_Button[type="submit"] {
+    .Post_Button {
         transition: 0.5s;
-        background-color: #27acd5;
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 10px;
+        padding: 10px 20px;
+        background-color: #2aa0d7;
         color: white;
-        padding: 10px;
-        border-radius: 5px;
         border: none;
-        cursor: pointer;
-    }
+        cursor:pointer
+        }
+        .Post_Button:hover {
+        background-color:#d7e8f4
+        }
+       
 
     .EncabezadoPrincipal {
         display: flex;
