@@ -160,11 +160,13 @@
 
     /*SECCION DE PUBLICACIONES -------------------------------------------------*/
     .PostContainer {
-        width: auto;
-        display: flex;
+        display: block;
+        width: 100%;
+        display: block;
         flex-direction: column;
         align-items: center;
         font-family: Arial, sans-serif;
+        margin: 10px;
 
     }
     .post {
@@ -349,9 +351,8 @@
     /*SECCION DE LOS POST*/
 
     .formatoPost {
-        display: flex;
+        width: 50%;        
         flex-direction: column;
-        
         background-color: rgb(30, 31, 98);
         border-radius: 0%;
         padding: 20px;
@@ -380,11 +381,25 @@
         border: none;
         cursor:pointer
         }
-        .Post_Button:hover {
+    .Post_Button:hover {
         background-color:#d7e8f4
         }
-       
+    .post_Button_edit {
+        margin-left: auto;
+        transition: 0.5s;
+        margin-top: 20px;
+        margin-right: 10px;
+        padding: 10px 20px;
+        background-color: #2aa0d7;
+        color: white;
+        border: none;
+        cursor:pointer
 
+    } 
+.post_Button_edit:hover{
+    background-color:#d7e8f4
+
+}
     .EncabezadoPrincipal {
         display: flex;
         align-items: center;

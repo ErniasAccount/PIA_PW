@@ -19,10 +19,10 @@
     <div class="EncabezadoPrincipal">
         <a href="PaginaPrincipal.html"><h1 class="icono">PioPio.com</h1></a>
         <div>
-        <a class="Separador" href="InicioSesion.html">Cerrar sesion</a>
-        <a class="Separador" href="PaginaPrincipal.html">PaginaPrincipal</a>
-        <a class="Separador" href="Perfil.html">Mi perfil</a>
-        <a class="Separador" href="Post.html">Hacer un Post</a>
+        <a id="MenuSperior_Cerrar" class="Separador" href="InicioSesion.html">Cerrar sesion</a>
+        <a id="MenuSperior_Principal"class="Separador" href="PaginaPrincipal.html">PaginaPrincipal</a>
+        <a id="MenuSperior_MiPerfil"class="Separador" href="Perfil.html">Mi perfil</a>
+        <a id="MenuSperior_HacerPost"class="Separador" href="Post_Nuevo.html">Hacer un Post</a>
        
         <input type="text" id="searchInput">
         <button class="sepa" id="searchBtn">Buscar</button>
@@ -40,30 +40,32 @@
         <div class="dashboard">
             <div>
             </div>
-            <div class="PostContainer">
-                <div class="post">
-                 <div class="post-header">
-                  <img id="Post_FotoPerfil" src="https://th.bing.com/th/id/R.0aa97fd1bc308c24a414b027d89ef047?rik=O0CcWbUsqTzKTA&riu=http%3a%2f%2fwww.eje21.com.co%2fsite%2fwp-content%2fuploads%2f2018%2f09%2fDon-Ram%c3%b3n.-Foto-Televisa..png&ehk=YTuX%2fzvhBIqbmN8Xz%2bT9SFa%2f7Z4XbnoajMf%2bsPrvCKw%3d&risl=&pid=ImgRaw&r=0" alt="Avatar">
-                  <h3 id="Post_Nombre">Nombre de usuario</h3>
-                  <button class="Post_Button">Editar publicación</button>
+            <div class="PostContainer"> 
+                <div id="Dashboard_Post" class="post">
 
+                 <div id="Dashboard_Post_heaeder" class="post-header">
+                  <img id="Dashboard_Post_FotoPerfil" src="https://th.bing.com/th/id/R.0aa97fd1bc308c24a414b027d89ef047?rik=O0CcWbUsqTzKTA&riu=http%3a%2f%2fwww.eje21.com.co%2fsite%2fwp-content%2fuploads%2f2018%2f09%2fDon-Ram%c3%b3n.-Foto-Televisa..png&ehk=YTuX%2fzvhBIqbmN8Xz%2bT9SFa%2f7Z4XbnoajMf%2bsPrvCKw%3d&risl=&pid=ImgRaw&r=0" alt="Avatar">
+                  <h3 id="Dashboard_Post_Nombre">Nombre de usuario</h3>
+                  <button id="Dashboard_Post_BotonEditar" class="post_Button_edit" onclick="window.location.href='Post_editar.html'">Editar publicación</button>
                  </div>
                
                  <div class="post-content">
-                  <a id="Dashboard_Texto_Post">Hola</a>
+                    <h3 id="Dashboard_Titulo_Post">Titulo</h3>
+                  <a id="Dashboard_Contenido_Post">Contenido</a>
                  </div>
                
-                 <div class="post-footer">
-                  <span id="Post_FechaPublicacion">Publicado hace X minutos</span>
-                  <a href="#">Me gusta </a>
-                  <a href="#">Comentar </a>
-                  <a href="#">Compartir </a>
-                  <span>123 Me gusta</span>
-                  <span>y otras X personas más les gusta esto.</span>
+                 <div id="Dashboard_Post_footer" class="post-footer">
+                  <span id="Dashboard_Post_FechaPublicacion">Publicado hace:</span>
+                  <a id="Dashboard_Post_Likes" href="#">Me gusta </a>
+                  <a id="Dashboard_Post_Num_Comentarios" href="#">Comentar </a>
+                  <a id="Dashboard_Post_" href="#">Compartir </a>
+                  <span>Likes.</span>
                  </div> 
-                 <!-- Agregar botón para editar la publicación -->
+
                 </div>
+                
                </div>
+               
             </div>           
         </div>
     </div>
