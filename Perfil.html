@@ -25,30 +25,12 @@
         <div class="profile">
             
             <div class="profile-header">
-                <input type="file" id="archivo" name="archivo"/>
-                <script>
-                    function mostrarImagen(event){
-                        var imagenSource = event.target.result;
-                        var previewimage = document.getElementById('preview')
-                        previewimage.src = imagenSource;
-                    }
-                    function procesarArchivo(event){
-                        var imagen = event.target.files[0]
-                        var lector = new FileReader();
-                        lector.readAsDataURL(imagen);
-                        lector.addEventListener('load', mostrarImagen)
-                    }
-                    document.getElementById('archivo')
-                    .addEventListener('change',procesarArchivo,false)
-                </script>
-
                 <img id="preview" src="https://th.bing.com/th/id/R.0aa97fd1bc308c24a414b027d89ef047?rik=O0CcWbUsqTzKTA&riu=http%3a%2f%2fwww.eje21.com.co%2fsite%2fwp-content%2fuploads%2f2018%2f09%2fDon-Ram%c3%b3n.-Foto-Televisa..png&ehk=YTuX%2fzvhBIqbmN8Xz%2bT9SFa%2f7Z4XbnoajMf%2bsPrvCKw%3d&risl=&pid=ImgRaw&r=0" alt="Avatar">
                 <div>
-                    <h1 id="Usuario_Nombre">Nombre de usuario</h1>
-                    <h2 id="Usuario_Arroba">@nombredeusuario</h2>
-                    <p id="Usuario_Descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum.</p>
-                    <br><span id="Ubicacion">Ubicación</span><br>
-                    <button>Editar perfil</button>
+                    <h1 id="Perfil_Nombre">Nombre de usuario</h1>
+                    <h2 id="Perfil_Arroba">@nombredeusuario</h2>
+                    <p id="Perfil_Descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum.</p>
+                    <button onclick="window.location.href='Perfil_editar.html'">Editar perfil</button>
                     <button onclick="window.location.href='PaginaPrincipal.html'">Salir</button>
 
                  
@@ -59,37 +41,28 @@
             
             <div class="profile-body">
                 <div>
-                    <h3>Publicaciones</h3>
-                    <p1>1234</p1>
-                </div>
-                
-                <div>
-                    <h3>Seguidores</h3>
-                    <p1>1234</p1>
+                    <h3>Nombre</h3>
+                    <p1 id="Perfil_Nombre">Nombre</p1>
                 </div>
 
                 <div>
-                    <h3>Seguidos</h3>
-                    <p1>1234</p1>
+                    <h3>Apellido</h3>
+                    <p1 id="Perfil_Apellidos">Apellidos</p1>
                 </div>
+
                 <div>
-                    <h3>Amigos</h3>
-                    <p1>1234</p1>
+                    <h3>Fecha de Nacimiento</h3>
+                    <p1 id="Perfil_FechNac">fecha</p1>
                 </div>
-                
+
                 <div>
-                    <h3>Fotos</h3>
-                    <p1>1234</p1>
-                </div>
-                
-                <div>
-                    <h3>Videos</h3>
-                    <p1>1234</p1>
+                    <h3>Email</h3>
+                    <p1 id="Perfil_Email">email</p1>
                 </div>
                 
                 <div>
-                    <h3>Eventos</h3>
-                    <p1>1234</p1>
+                    <h3>Contraseña</h3>
+                    <p1 id="Perfil_Contraseña">contraseña</p1>
                 </div>
 
             </div>

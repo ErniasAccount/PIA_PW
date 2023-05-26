@@ -146,6 +146,9 @@
         
     }
 
+    .sidebar img{
+        width: auto;
+    }
     .dashboard {
         width: 70%;
         height: auto;
@@ -255,6 +258,7 @@
     }
 
     /*SECCION DE PERFIL---------------------------------------------------------*/
+    
     .Profilecontainer {
         display: flex;
         flex-direction: column;
@@ -328,6 +332,15 @@
         flex-wrap:wrap; 
     }
     
+    .profile-body input{
+        border-radius: 12px;
+       
+        background: #ffffff;
+        margin-top: 5%;
+        padding: 20px 40px;
+        color: rgb(196, 221, 237);
+
+    }
     .profile-body div{
         flex-basis:calc(33.33% - 20px);  
         margin-right:20px;  
@@ -351,12 +364,12 @@
     /*SECCION DE LOS POST*/
 
     .formatoPost {
-        width: 50%;        
-        flex-direction: column;
-        background-color: rgb(30, 31, 98);
-        border-radius: 0%;
+        width: 600px;
+        background-color: #f2f2f2;
         padding: 20px;
-        color: aliceblue;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     }
     .inputPost[type="text"], textarea {
         margin-bottom: 10px;

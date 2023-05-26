@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <div class="EncabezadoPrincipal">
+        <a href="PaginaPrincipal.html"><h1 class="icono">PioPio.com</h1></a>
+        <div>
+        <a class="Separador" href="InicioSesion.html">Cerrar sesion</a>
+        <a class="Separador" href="PaginaPrincipal.html">PaginaPrincipal</a>
+        <a class="Separador" href="Perfil.html">Mi perfil</a>
+        <a class="Separador" href="Post_Nuevo.html">Hacer un Post</a>
+       
+        <input type="text" id="searchInput">
+        <button class="sepa" id="searchBtn">Buscar</button>
+        </div>
+       
+       </div>    
+</head>
+<body>
+    <div class="Profilecontainer">
+        <div class="profile">
+            
+            <div class="profile-header">
+                <input type="file" id="archivo" name="archivo"/>
+                <script>
+                    function mostrarImagen(event){
+                        var imagenSource = event.target.result;
+                        var previewimage = document.getElementById('preview')
+                        previewimage.src = imagenSource;
+                    }
+                    function procesarArchivo(event){
+                        var imagen = event.target.files[0]
+                        var lector = new FileReader();
+                        lector.readAsDataURL(imagen);
+                        lector.addEventListener('load', mostrarImagen)
+                    }
+                    document.getElementById('archivo')
+                    .addEventListener('change',procesarArchivo,false)
+                </script>
+
+                <img id="preview" src="https://th.bing.com/th/id/R.0aa97fd1bc308c24a414b027d89ef047?rik=O0CcWbUsqTzKTA&riu=http%3a%2f%2fwww.eje21.com.co%2fsite%2fwp-content%2fuploads%2f2018%2f09%2fDon-Ram%c3%b3n.-Foto-Televisa..png&ehk=YTuX%2fzvhBIqbmN8Xz%2bT9SFa%2f7Z4XbnoajMf%2bsPrvCKw%3d&risl=&pid=ImgRaw&r=0" alt="Avatar">
+                <div>
+                    Nombre de usuario: <input id="Perfil_Nombre"></h1>
+                    <h2 id="Perfil_Editar_Arroba">@nombredeusuario</h2>
+                    <p id="Perfil_Editar_Descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum. Sed euismod justo vel sapien ultrices, vel aliquam nunc bibendum. Donec euismod velit vitae enim lacinia, vel luctus sapien bibendum.</p>
+                    <br>
+                    <button id="Perfil_Editar_guardarcambios" onclick="Peril_GuardarCambios()">Guardar Cambios</button>
+                    <button onclick="window.location.href='PaginaPrincipal.html'">Cancelar</button>
+
+                 
+
+                </div>
+
+            </div>
+            
+            <div class="profile-body">
+                <div>
+                    <input>Nombre</h3>
+                    <p1 id="Perfil_Editar_Nombre"></p1>
+                </div>
+
+                <div>
+                    <input>Apellido</h3>
+                    <p1 id="Perfil_Editar_Apellidos"></p1>
+                </div>
+
+                <div>
+                    <input>Fecha de Nacimiento</h3>
+                    <p1 id="Perfil_Editar_FechNac"></p1>
+                </div>
+
+                <div>
+                    <input>Email</h3>
+                    <p1 id="Perfil_Editar_Email"></p1>
+                </div>
+                
+                <div>
+                    <input>Contraseña</h3>
+                    <p1 id="Perfil_Contraseña"></p1>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
