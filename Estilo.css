@@ -129,7 +129,6 @@
 
         display: flex;
         flex-wrap: wrap;
-        height: 100vh;
     }
 
     .sidebar {
@@ -138,7 +137,6 @@
         width: 20%;
         height: auto;
 
-        height: 100%;
         background-color: #86bae7;
         align-items: center;
         justify-content: center;
@@ -152,7 +150,7 @@
     .dashboard {
         width: 70%;
         height: auto;
-        padding: 20px;
+        padding: 10px;
         height: 100%;
         background-color: #e6e6e6;
         display: flex;
